@@ -4,12 +4,12 @@
 ##      invert(): returns the inverse of the matrix.
 
 
-## makeCacheMatrix creates an instance of out special matrix from an ordinary matrix
+## makeCacheMatrix creates an instance of our special matrix from an ordinary matrix
 ## Example usage: (x is an invertible matrix)
 ##  cacheMatrix <- makeCacheMatrix(x)   ##Create an instance of the special matrix from x
 ##  copyOfX <- cacheMatrix$get()        ##Get a copy of the original matrix
-##  inverse <- cacheMatrix$invert()     ##Get the inverse, first time is computed.
-##  inverse <- cacheMatrix$invert()     ##Get the inverse, second time fetches from cache
+##  inverse <- cacheMatrix$invert()     ##Get the inverse, first time it is computed.
+##  inverse <- cacheMatrix$invert()     ##Get the inverse, second time it fetches from cache
 
 
 makeCacheMatrix <- function(x = matrix()) {
